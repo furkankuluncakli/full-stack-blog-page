@@ -44,8 +44,10 @@ function MainCategories() {
         </Link>
       </div>
       <span className="text-xl font-medium">|</span>
-      <div className="flex items-center gap-2 bg-gray-300 px-4 py-2 rounded-full text-black
-      w-1/4">
+      <div
+        className="flex items-center gap-2 bg-gray-300 px-4 py-2 rounded-full text-black
+      w-1/4"
+      >
         <CiSearch />
         <input
           type="text"
