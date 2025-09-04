@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MainCategories from "../components/MainCategories";
 
 function HomePage() {
   return (
@@ -18,7 +19,7 @@ function HomePage() {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, ea!
           </p>
         </div>
-        <Link to="write" className="relative">
+        <Link to="write" className="hidden md:block relative">
           <svg
             viewBox="0 0 200 200"
             width="200"
@@ -55,6 +56,7 @@ function HomePage() {
           </button>
         </Link>
       </div>
+      <MainCategories/>
     </div>
   );
 }
