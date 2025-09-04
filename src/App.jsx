@@ -1,23 +1,10 @@
 import React from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
-          🚀 Modern Blog App
-        </h1>
-        <p className="text-lg text-gray-600 mb-8">
-          React + Vite + TailwindCSS ile güçlendirilmiş
-        </p>
-        <div className="bg-white p-6 rounded-lg shadow-lg">
-          <p className="text-green-600 font-semibold">
-            ✅ Kurulum başarılı! Geliştirmeye başlayabilirsin.
-          </p>
-        </div>
-      </div>
-    </div>
-  );
+  return <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+    <Navbar/>
+  </div>;
 }
 
 export default App;
