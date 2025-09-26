@@ -3,21 +3,29 @@ import Image from "./Image";
 function PostListItem() {
   return (
     <div className="flex flex-col xl:flex-row gap-8">
-      <div>
-        <Image src={"postImg.jpeg"} className="rounded-2xl object-cover" />
+      <div className="md:hidden xl:block xl:w-1/3">
+        <Image src={"postImg.jpeg"} w={735} className="rounded-2xl object-cover" />
       </div>
 
-      <div>
+      <div className="flex flex-col gap-4 xl:w-2/3">
         <Link to="/test" className="text-4xl font-semibold">
           Lorem ipsum dolor sit amet.
         </Link>
         <div className="flex items-center gap-2 text-gray-400 text-sm">
-          <span className="text-gray-500">Written By</span>
+          <span>Written By</span>
           <Link className="text-blue-500">John Doe</Link>
-          <span className="text-gray-500">on</span>
+          <span>on</span>
           <Link className="text-blue-500">Web Design</Link>
-          <span className="text-gray-500">2 Days Ago</span>
+          <span>2 Days Ago</span>
         </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+          tempora, mollitia placeat optio architecto dicta nesciunt error
+          cupiditate vel ipsum!
+        </p>
+        <Link to="/test" className="underline text-sm text-blue-500">
+          Read More
+        </Link>
       </div>
     </div>
   );
