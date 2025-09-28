@@ -9,7 +9,7 @@ function Search() {
       <input
         type="text"
         placeholder="Search"
-        className="outline-none bg-transparent text-white placeholder:text-white"
+        className="outline-none bg-transparent text-gray-800 placeholder:text-white"
       />
     </div>
   );

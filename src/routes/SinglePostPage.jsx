@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Image from "../components/Image";
 import PostMenuActions from "../components/PostMenuActions";
 import Search from "../components/Search";
+import Comments from "../components/Comments";
 
 function SinglePostPage() {
   return (
@@ -109,7 +110,9 @@ function SinglePostPage() {
             />
             <Link className="text-blue-500"> John Doe</Link>
           </div>
-          <p className="text-sm text-gray-500 mt-5 mb-5">Lorem ipsum dolor sit.</p>
+          <p className="text-sm text-gray-500 mt-5 mb-5">
+            Lorem ipsum dolor sit.
+          </p>
           <div className="flex items center gap-4">
             <Link>
               <Image src="facebook.svg" />
@@ -142,6 +145,7 @@ function SinglePostPage() {
           <Search />
         </div>
       </div>
+      <Comments />
     </div>
   );
 }
